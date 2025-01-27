@@ -1,3 +1,39 @@
+.plants-grid {
+    display: flex; /* Make the container a flexbox */
+    gap: 10px; /* Optional: adds spacing between the items */
+}
+
+.plant-card {
+    background-color: white;
+    width: 40%;
+    height: 40%;
+    border: 10px solid grey;
+    flex:1;
+}
+.cart-quantity {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: white;
+    font-size: 24px;
+}
+.plant-card > img {
+    display: block; /* Required to make margin auto work on images */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* You can adjust the width to your preference */
+    height: 50%;
+    padding: 10px;
+}
+.plant-card > .cost {
+    display: block; /* Required to make margin auto work on images */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* You can adjust the width to your preference */
+    height: 50%;
+    color:red;
+}
+
 /* Reset some default styles */
 body, h1, ul {
     margin: 0;
@@ -163,6 +199,7 @@ body {
 .cart{
     color: white;
     display: flex;
+    position: relative;
 }
 .cart_quantity_count{
     margin-top: 16px;
